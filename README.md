@@ -8,7 +8,7 @@ The following apps / tools are currently in this repository:
 
 | Name    | CI                                                                                        | Description           |
 |---------|-------------------------------------------------------------------------------------------|-----------------------|
-| `clock` | ![Deploy docs](https://github.com/Ewpratten/smalltools/workflows/Deploy%20docs/badge.svg) | A small CLI clock app |
+| `clock` | ![Deploy docs](https://github.com/Ewpratten/smalltools/workflows/Build%20Clock/badge.svg) | A small CLI clock app |
 
 ## Building
 

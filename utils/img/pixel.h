@@ -16,7 +16,7 @@ typedef struct BGR8Bit {
     uint8_t blue;
     uint8_t green;
     uint8_t red;
-};
+} BGR8Bit;
 
 /**
  * @brief An 8-bit pixel in RGB format
@@ -25,7 +25,7 @@ typedef struct RGB8Bit {
     uint8_t red;
     uint8_t green;
     uint8_t blue;
-};
+} RGB8Bit;
 
 /**
  * @brief Converts a BGR8Bit to an RGB8Bit

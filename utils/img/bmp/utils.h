@@ -2,6 +2,7 @@
 #define _SMALLTOOLS_UTILS_IMG_BMP_UTILS_H
 
 #include <stdint.h>
+#include <stdio.h>
 
 #include "fileheader.h"
 
@@ -25,13 +26,11 @@ void initBitmap(BMPHeader* header, BMPInfo* info, uint32_t size, int32_t width,
 
 /**
  * @brief Destroy a bitmap
- * 
+ *
  * @param header File header
  * @param info File info
  */
 void destroyBitmap(BMPHeader* header, BMPInfo* info);
-
-
 
 #ifdef __cplusplus
 }  // extern C

@@ -12,7 +12,7 @@ extern "C" {
 /**
  * @brief Bitmap file header
  */
-struct BMPHeader {
+typedef struct BMPHeader {
     // file signature
     char signature[2];
 
@@ -24,13 +24,12 @@ struct BMPHeader {
 
     // Start of image data
     uint32_t data_offset;
-};
-typedef struct BMPHeader BMPHeader;
+} BMPHeader;
 
 /**
  * @brief Bitmap file info data
  */
-struct BMPInfo {
+typedef struct BMPInfo {
     // Header size
     uint32_t size;
 
@@ -51,9 +50,7 @@ struct BMPInfo {
     // Other settings
     uint32_t color_table;
     uint32_t important_colors;
-};
-typedef struct BMPInfo BMPInfo;
-
+} BMPInfo;
 
 #ifdef __cplusplus
 }  // extern C

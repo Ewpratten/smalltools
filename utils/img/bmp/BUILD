@@ -14,6 +14,20 @@ cc_library(
         "utils.h",
     ],
     deps = [
+        ":fileheader"
+    ]
+)
+
+cc_library(
+    name = "io",
+    srcs = [
+        "io.c",
+        "io.h",
+    ],
+    hdrs = [
+        "io.h",
+    ],
+    deps = [
         ":fileheader",
         "//utils/img:pixel"
     ]

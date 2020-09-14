@@ -1,10 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <stdlib.h>
 
-#include "utils/time/timestr.h"
 #include "utils/time/sleep.h"
+#include "utils/time/timestr.h"
 
 /**
  * @brief Fetches the local time from the system, and prints it
@@ -26,7 +26,25 @@ void printLocalTime() {
     free(time_string);
 }
 
+/**
+ * @brief Print program usage / help message
+ */
+void help() {
+    puts("clock: A small tool for displaying the time");
+    puts("\t-i (optional)\tOnly print the time once");
+    puts(
+        "\nCalling this program with no arguments will update the time every "
+        "second");
+    puts("This can be stopped by pressing CTRL+C");
+}
+
 int main(int argc, char const* argv[]) {
+    // Handle program help
+    if (argc >= 2 && strcmp(argv[1], "-h") == 0) {
+        help();
+        return 0;
+    }
+
     // Print the local time info
     printLocalTime();
 

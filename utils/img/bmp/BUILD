@@ -29,7 +29,8 @@ cc_library(
     ],
     deps = [
         ":fileheader",
-        "//utils/img:pixel"
+        "//utils/img:pixel",
+        "//utils/platform:endianness"
     ]
 )
 

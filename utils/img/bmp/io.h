@@ -33,7 +33,7 @@ int writeBitmap(BMPHeader* header, BMPInfo* info, BGR8Bit* data_ptr,
  * @param stream Input stream
  * @return int Number of bytes
  */
-int getBitmapDataLength(FILE* stream);
+uint32_t getBitmapDataLength(FILE* stream);
 
 /**
  * @brief Read a bitmap from a file
@@ -45,7 +45,7 @@ int getBitmapDataLength(FILE* stream);
  * @param stream Stream to read from
  * @return Number of pixels read from the image
  */
-size_t readBitmap(BMPHeader* header, BMPInfo* info, BGR8Bit* data_ptr,
+uint32_t readBitmap(BMPHeader* header, BMPInfo* info, BGR8Bit* data_ptr,
                     size_t data_len, FILE* stream);
 
 #ifdef __cplusplus

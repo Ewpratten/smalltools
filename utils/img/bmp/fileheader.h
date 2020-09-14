@@ -9,6 +9,10 @@ namespace img {
 extern "C" {
 #endif
 
+// These are defined because structs may be padded by the compiler, making sizeof() unreliable
+#define sizeof_BMPHeader 14
+#define sizeof_BMPInfo 40
+
 /**
  * @brief Bitmap file header
  */

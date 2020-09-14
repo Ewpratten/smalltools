@@ -9,8 +9,8 @@ void initBitmap(BMPHeader* header, BMPInfo* info, uint32_t size, int32_t width,
     (*header).signature[1] = 'M';
 
     // Get the header sizes
-    size_t header_size = sizeof(BMPHeader);
-    size_t info_size = sizeof(BMPInfo);
+    size_t header_size = sizeof_BMPHeader;
+    size_t info_size = sizeof_BMPInfo;
 
     // Fill in the file size
     // This includes the pre-known header sizes

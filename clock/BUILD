@@ -10,7 +10,7 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
     deps = [
-        "//utils/time:timestr_c",
-        "//utils/time:sleep_c",
+        "//utils/time:timestr",
+        "//utils/time:sleep",
     ],
 )

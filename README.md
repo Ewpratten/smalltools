@@ -6,9 +6,10 @@ This repository contains a slowly growing collection of small apps and tools I h
 
 The following apps / tools are currently in this repository:
 
-| Name    | CI                                                                                        | Description           |
-|---------|-------------------------------------------------------------------------------------------|-----------------------|
-| `clock` | ![Deploy docs](https://github.com/Ewpratten/smalltools/workflows/Build%20Clock/badge.svg) | A small CLI clock app |
+| Name      | CI                                                                                      | Description                         |
+|-----------|-----------------------------------------------------------------------------------------|-------------------------------------|
+| `clock`   | ![Clock](https://github.com/Ewpratten/smalltools/workflows/Build%20Clock/badge.svg)     | A small CLI clock app               |
+| `bmpinfo` | ![BMPInfo](https://github.com/Ewpratten/smalltools/workflows/Build%20BMPInfo/badge.svg) | A tool for debugging bitmap headers |
 
 ## Building
 

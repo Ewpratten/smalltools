@@ -3,6 +3,12 @@
 
 #include <time.h>
 
+#ifdef __cplusplus
+namespace st {
+namespace time {
+extern "C" {
+#endif
+
 // A list of all months in order
 extern const char* month_names[12];
 
@@ -19,5 +25,11 @@ extern size_t max_time_string_length;
  * @return String
  */
 char* getTimeAsString(struct tm* time);
+
+#ifdef __cplusplus
+}  // extern C
+}  // namespace st
+}  // namespace time
+#endif
 
 #endif  // _SMALLTOOLS_UTILS_TIME_TIMESTR_H

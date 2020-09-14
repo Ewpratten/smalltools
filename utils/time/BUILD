@@ -5,7 +5,7 @@ package(
 )
 
 cc_library(
-    name = "timestr_c",
+    name = "timestr",
     srcs = [
         "timestr.c",
         "timestr.h",
@@ -16,7 +16,7 @@ cc_library(
 )
 
 cc_library(
-    name = "sleep_c",
+    name = "sleep",
     srcs = [
         "sleep.h",
     ] + select({

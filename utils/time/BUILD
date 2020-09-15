@@ -31,6 +31,9 @@ cc_test(
         ":timestr",
         "//third_party/check",
     ],
+    copts = [
+        "-Wno-unused-variable"
+    ]
 )
 
 cc_library(

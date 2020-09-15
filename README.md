@@ -20,3 +20,11 @@ bazel build //appname
 ```
 
 Where `appname` is the name of any of the apps listed above. The outputs will be generated in `bazel-bin` on your machine.
+
+## Tests
+
+Unit tests can be run with 
+
+```sh
+bazel test //:tests
+```

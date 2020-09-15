@@ -21,4 +21,21 @@ START_TEST(test_time_within_max_size) {
     ck_assert_int_eq(strlen(time_str) <= max_time_string_length, 1);
 }
 
+START_TEST(test_correct_string_generated) {
+    // Create a large time
+    struct tm time = {.tm_hour = 24,
+                      .tm_min = 59,
+                      .tm_sec = 59,
+                      .tm_mday = 4,
+                      .tm_mon = 1,
+                      .tm_wday = 4,
+                      .tm_year = 20};
+
+    // Get the time string
+    char* time_str = getTimeAsString(&time);
+
+    // Make sure the string is not longer than the max length
+    ck_assert_str_eq(time_str, "It is Wednesday, Jan 4, 1920. At 24:59:59");
+}
+
 int main(void) { return 0; }

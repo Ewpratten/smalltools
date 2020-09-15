@@ -23,3 +23,11 @@ http_archive(
     strip_prefix = "argtable3-3.1.5.1c1bb23",
     url = "https://github.com/argtable/argtable3/archive/v3.1.5.1c1bb23.zip",
 )
+
+
+http_archive(
+    name = "check_sources",
+    build_file_content = all_content,
+    strip_prefix = "check-0.15.2",
+    url = "https://github.com/libcheck/check/archive/0.15.2.tar.gz",
+)
